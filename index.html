@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fio Barbearia | Cada fio no lugar</title>
+  <meta name="description"
+    content="Fio Barbearia: corte e barba com hora marcada de verdade, toalha quente e preço fechado. Agende online em menos de um minuto.">
+  <meta property="og:title" content="Fio Barbearia | Cada fio no lugar">
+  <meta property="og:description" content="Corte e barba com hora marcada de verdade, toalha quente e preço fechado.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='black'/%3E%3Cpath d='M11 8h11v4h-7v3h6v4h-6v5h-4z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Fio Barbearia",
+    "description": "Barbearia com hora marcada, toalha quente e preço fechado.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua dos Barbeiros, 128",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "R$ 15 a R$ 95"
+  }
+  </script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a href="#inicio" class="wordmark" aria-label="Fio Barbearia, início">
+        <span class="wordmark-pole" aria-hidden="true"></span>
+        <span>Fio</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-solid btn-small nav-cta" href="#agendar">Agendar horário</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileNav"
+        aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navegação móvel">
+      <a href="#servicos">Serviços</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#agendar" class="btn btn-solid">Agendar horário</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="shop-status" id="shopStatus">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="shopStatusText">Segunda a sábado, a partir das 9h</span>
+          </p>
+          <h1>Cada fio no lugar.</h1>
+          <p class="hero-sub">Barbearia na Vila Madalena com hora marcada de verdade. Seu horário começa no horário, o
+            preço é o da tabela e você sai alinhado.</p>
+          <div class="hero-actions">
+            <a href="#agendar" class="btn btn-solid">Agendar horário</a>
+            <a href="#servicos" class="btn btn-outline">Ver serviços e preços</a>
+          </div>
+          <ul class="hero-facts">
+            <li>Hora marcada, sem fila</li>
+            <li>Toalha quente em todo atendimento</li>
+            <li>Preço fechado, sem surpresa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="servicos">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Serviços e preços</h2>
+          <p>Todo atendimento inclui toalha quente, finalização com produto e água gelada. O preço da tabela é o preço
+            final.</p>
+        </div>
+        <ul class="service-list">
+          <li class="service">
+            <div class="service-info">
+              <h3 class="service-name">Corte</h3>
+              <p class="service-desc">Tesoura ou máquina, do degradê ao clássico.</p>
+            </div>
+            <span class="service-time">45 min</span>
+            <span class="service-price">R$ 60</span>
+            <a class="btn btn-outline btn-small" href="#agendar" data-servico="corte"
+              aria-label="Agendar corte">Agendar</a>
+          </li>
+          <li class="service">
+            <div class="service-info">
+              <h3 class="service-name">Barba</h3>
+              <p class="service-desc">Toalha quente, navalha e hidratação.</p>
+            </div>
+            <span class="service-time">30 min</span>
+            <span class="service-price">R$ 45</span>
+            <a class="btn btn-outline btn-small" href="#agendar" data-servico="barba"
+              aria-label="Agendar barba">Agendar</a>
+          </li>
+          <li class="service">
+            <div class="service-info">
+              <h3 class="service-name">Corte + barba</h3>
+              <p class="service-desc">O combo completo, num horário só.</p>
+            </div>
+            <span class="service-time">75 min</span>
+            <span class="service-price">R$ 95</span>
+            <a class="btn btn-outline btn-small" href="#agendar" data-servico="combo"
+              aria-label="Agendar corte e barba">Agendar</a>
+          </li>
+          <li class="service">
+            <div class="service-info">
+              <h3 class="service-name">Sobrancelha</h3>
+              <p class="service-desc">Limpeza na navalha, sem exagero.</p>
+            </div>
+            <span class="service-time">15 min</span>
+            <span class="service-price">R$ 20</span>
+            <a class="btn btn-outline btn-small" href="#agendar" data-servico="sobrancelha"
+              aria-label="Agendar sobrancelha">Agendar</a>
+          </li>
+          <li class="service">
+            <div class="service-info">
+              <h3 class="service-name">Corte infantil</h3>
+              <p class="service-desc">Até 10 anos, com paciência de sobra.</p>
+            </div>
+            <span class="service-time">30 min</span>
+            <span class="service-price">R$ 45</span>
+            <a class="btn btn-outline btn-small" href="#agendar" data-servico="infantil"
+              aria-label="Agendar corte infantil">Agendar</a>
+          </li>
+          <li class="service">
+            <div class="service-info">
+              <h3 class="service-name">Pezinho</h3>
+              <p class="service-desc">Acabamento do contorno entre um corte e outro.</p>
+            </div>
+            <span class="service-time">15 min</span>
+            <span class="service-price">R$ 15</span>
+            <a class="btn btn-outline btn-small" href="#agendar" data-servico="pezinho"
+              aria-label="Agendar pezinho">Agendar</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="equipe">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Quem corta</h2>
+          <p>Escolha um barbeiro ou deixe que a gente encaixe você no primeiro horário livre.</p>
+        </div>
+        <ul class="team-list">
+          <li class="barber">
+            <div class="barber-photo"><img src="Imagens/Barbeiros/Rafa.jpg" alt="Rafa, barbeiro" loading="lazy"></div>
+            <h3 class="barber-name">Rafa</h3>
+            <p class="barber-focus">Degradê e navalhado. Dez anos de cadeira.</p>
+            <p class="barber-next">Próximo horário: <strong data-proximo="Rafa">calculando</strong></p>
+            <a class="btn btn-outline btn-small" href="#agendar" data-barbeiro="Rafa">Agendar com Rafa</a>
+          </li>
+          <li class="barber">
+            <div class="barber-photo"><img src="Imagens/Barbeiros/Dani.jpg" alt="Dani, barbeira" loading="lazy"></div>
+            <h3 class="barber-name">Dani</h3>
+            <p class="barber-focus">Barba desenhada e toalha quente.</p>
+            <p class="barber-next">Próximo horário: <strong data-proximo="Dani">calculando</strong></p>
+            <a class="btn btn-outline btn-small" href="#agendar" data-barbeiro="Dani">Agendar com Dani</a>
+          </li>
+          <li class="barber">
+            <div class="barber-photo"><img src="Imagens/Barbeiros/Leo.jpg" alt="Léo, barbeiro" loading="lazy"></div>
+            <h3 class="barber-name">Léo</h3>
+            <p class="barber-focus">Cortes clássicos e atendimento infantil.</p>
+            <p class="barber-next">Próximo horário: <strong data-proximo="Léo">calculando</strong></p>
+            <a class="btn btn-outline btn-small" href="#agendar" data-barbeiro="Léo">Agendar com Léo</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="trabalhos">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Trabalhos recentes</h2>
+          <p>Degradês, barbas e clássicos feitos na casa. Toque numa foto para ampliar.</p>
+        </div>
+        <ul class="work-grid">
+          <li class="work-item work-tall">
+            <button type="button" class="work-photo" aria-label="Ampliar foto: degradê baixo">
+              <img src="Imagens/Cabelos/Degrade-baixo.jpg" alt="Degradê baixo com acabamento na navalha"
+                loading="lazy">
+            </button>
+          </li>
+          <li class="work-item">
+            <button type="button" class="work-photo" aria-label="Ampliar foto: barba desenhada">
+              <img src="Imagens/Cabelos/Barba-desenhada.jpg" alt="Barba desenhada com contorno marcado" loading="lazy">
+            </button>
+          </li>
+          <li class="work-item">
+            <button type="button" class="work-photo" aria-label="Ampliar foto: corte clássico">
+              <img src="Imagens/Cabelos/Corte-social.jpg" alt="Corte clássico com risca lateral" loading="lazy">
+            </button>
+          </li>
+          <li class="work-item work-wide">
+            <button type="button" class="work-photo" aria-label="Ampliar foto: toalha quente">
+              <img src="Imagens/Cabelos/Barba-com-toalha-quente.jpg" alt="Barba com toalha quente sendo aplicada"
+                loading="lazy">
+            </button>
+          </li>
+          <li class="work-item work-big">
+            <button type="button" class="work-photo" aria-label="Ampliar foto: degradê alto">
+              <img src="Imagens/Cabelos/Degrade-texturizado.jpg" alt="Degradê alto com topo texturizado"
+                loading="lazy">
+            </button>
+          </li>
+          <li class="work-item work-tall">
+            <button type="button" class="work-photo" aria-label="Ampliar foto: corte infantil">
+              <img src="Imagens/Cabelos/Corte-infantil.jpg" alt="Corte infantil finalizado" loading="lazy">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="avaliacoes">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>O que dizem os clientes</h2>
+        </div>
+        <ul class="review-list">
+          <li>
+            <figure class="review">
+              <blockquote>
+                <p>Marquei pelo site, cheguei no horário e já sentei na cadeira. Em 45 minutos eu estava na rua.</p>
+              </blockquote>
+              <figcaption>Marcos, corte e barba</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="review">
+              <blockquote>
+                <p>O preço que vi no site foi o preço que paguei. Parece pouco, mas ninguém mais faz isso.</p>
+              </blockquote>
+              <figcaption>Felipe, corte</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="review">
+              <blockquote>
+                <p>Levei meu filho de 6 anos e o Léo teve toda a paciência do mundo. Voltamos todo mês.</p>
+              </blockquote>
+              <figcaption>Caio, corte infantil</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="agendar">
+      <div class="section-inner booking-inner">
+        <div class="booking-main">
+          <div class="section-head">
+            <h2>Agende seu horário</h2>
+            <p>Escolha o serviço, o barbeiro e o horário. Leva menos de um minuto.</p>
+          </div>
+
+          <form class="booking-form" id="bookingForm" novalidate>
+            <fieldset class="group">
+              <legend>Serviço</legend>
+              <div class="chips">
+                <input type="radio" name="servico" id="servico-corte" value="corte" checked>
+                <label for="servico-corte">Corte <span>R$ 60</span></label>
+
+                <input type="radio" name="servico" id="servico-barba" value="barba">
+                <label for="servico-barba">Barba <span>R$ 45</span></label>
+
+                <input type="radio" name="servico" id="servico-combo" value="combo">
+                <label for="servico-combo">Corte + barba <span>R$ 95</span></label>
+
+                <input type="radio" name="servico" id="servico-sobrancelha" value="sobrancelha">
+                <label for="servico-sobrancelha">Sobrancelha <span>R$ 20</span></label>
+
+                <input type="radio" name="servico" id="servico-infantil" value="infantil">
+                <label for="servico-infantil">Corte infantil <span>R$ 45</span></label>
+
+                <input type="radio" name="servico" id="servico-pezinho" value="pezinho">
+                <label for="servico-pezinho">Pezinho <span>R$ 15</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="group">
+              <legend>Barbeiro</legend>
+              <div class="chips">
+                <input type="radio" name="barbeiro" id="barbeiro-qualquer" value="qualquer" checked>
+                <label for="barbeiro-qualquer">Primeiro livre</label>
+
+                <input type="radio" name="barbeiro" id="barbeiro-rafa" value="Rafa">
+                <label for="barbeiro-rafa">Rafa</label>
+
+                <input type="radio" name="barbeiro" id="barbeiro-dani" value="Dani">
+                <label for="barbeiro-dani">Dani</label>
+
+                <input type="radio" name="barbeiro" id="barbeiro-leo" value="Léo">
+                <label for="barbeiro-leo">Léo</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="data">Data</label>
+              <input type="date" id="data" name="data" required>
+              <span class="field-error" id="err-data"></span>
+            </div>
+
+            <fieldset class="group">
+              <legend>Horário</legend>
+              <div class="slots" id="slots"></div>
+              <p class="slots-note" id="slotsNote" aria-live="polite"></p>
+              <span class="field-error" id="err-horario"></span>
+            </fieldset>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+                <span class="field-error" id="err-nome"></span>
+              </div>
+              <div class="field">
+                <label for="telefone">Telefone com DDD</label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(11) 90000-0000"
+                  required>
+                <span class="field-error" id="err-telefone"></span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-solid btn-full">Confirmar agendamento</button>
+            <div class="booking-result" id="bookingResult" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="booking-info">
+          <h3>Horário de funcionamento</h3>
+          <dl class="hours">
+            <div class="hours-row" data-dia="1 2 3 4 5">
+              <dt>Segunda a sexta</dt>
+              <dd>9h às 20h</dd>
+            </div>
+            <div class="hours-row" data-dia="6">
+              <dt>Sábado</dt>
+              <dd>9h às 18h</dd>
+            </div>
+            <div class="hours-row" data-dia="0">
+              <dt>Domingo</dt>
+              <dd>Fechado</dd>
+            </div>
+          </dl>
+
+          <h3>Endereço</h3>
+          <p>Rua dos Barbeiros, 128<br>Vila Madalena, São Paulo</p>
+
+          <h3>Contato</h3>
+          <p>
+            <a href="#">(11) 90000-0000</a><br>
+            <a href="#">@fio.barbearia</a>
+          </p>
+
+          <h3>Antes de vir</h3>
+          <p>Cancelamento sem custo até 2 horas antes do horário. Atrasos acima de 10 minutos podem exigir remarcação.
+            Atendemos crianças a partir dos 3 anos.</p>
+
+          <div class="map-frame">
+            <iframe title="Mapa da Vila Madalena, São Paulo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Vila+Madalena,+S%C3%A3o+Paulo+-+SP&output=embed"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <dialog id="workModal" class="work-modal" aria-label="Foto ampliada do trabalho">
+    <div class="work-modal-bar">
+      <button type="button" class="work-modal-close" aria-label="Fechar imagem">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="work-modal-figure">
+      <img id="workModalImg" class="work-modal-img" alt="">
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="#inicio" class="wordmark" aria-label="Fio Barbearia, início">
+        <span class="wordmark-pole" aria-hidden="true"></span>
+        <span>Fio</span>
+      </a>
+      <p>&copy; <span id="year"></span> Fio Barbearia. Site demonstrativo, todos os dados são fictícios.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
